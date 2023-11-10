@@ -13,7 +13,9 @@ export const Home = () => {
           <meta charSet="utf-8" />
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
+          
         </Helmet>
+        
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div
             className="h_bg-image order-1 order-lg-2 h-100 "
@@ -38,10 +40,13 @@ export const Home = () => {
                   />
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
+                <p>Welcome to our Web Sanctuary, Where Code Meets Creativity. We are Name, 
+                a team of web developers on a mission to turn digital dreams into reality. With a keyboard as our paintbrush and lines 
+                of code as our palette, we sculpt seamless online experiences.</p>
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
-                    <div id="button_p" className="ac_btn btn ">
-                      My Portfolio
+                    <div id="button_h" className="ac_btn btn ">
+                      Our Portfolio
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
@@ -49,12 +54,22 @@ export const Home = () => {
                   </Link>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
-                      Contact Me
+                      Contact Us
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                 
+                  <Link to="/about">
+                    <div id="button_h" className="ac_btn btn">
+                      About Us
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </Link>
+                  
                 </div>
               </div>
             </div>
